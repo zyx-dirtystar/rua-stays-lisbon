@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Rua Stays · 研究后台</title>
+  <link rel="icon" href="/favicon.svg">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/research.mjs"></script>
+</head>
+<body>
+  <header class="site-head"><div class="frame nav"><div class="brand"><span class="brand-mark" aria-hidden="true"></span>Rua <span>Stays</span></div><span>研究后台</span></div></header>
+  <main class="frame research"><h1>酒店搜索实验</h1>
+    <section class="box"><h2>预览被试流程</h2><p>每次打开预览都会新建会话。预览数据在记录中标记为 preview。</p><div id="launches" class="research-toolbar"></div></section>
+    <section class="box"><h2>四组概况</h2><div class="research-toolbar">
+      <label class="field">样本<select id="run"><option value="participant">正式会话</option><option value="preview">预览会话</option></select></label>
+      <button type="button" class="secondary" id="refresh">刷新</button>
+    </div><div id="summary" aria-live="polite">加载中…</div><div id="exports" class="research-toolbar"></div></section>
+    <section class="box"><h2>最近会话</h2><p>选择会话查看曝光、列表与最终结果。时间以 UTC 显示，完整数据见 CSV。</p><div id="sessions">加载中…</div></section>
+    <section class="box" id="timeline" hidden></section>
+  </main>
+  <footer class="site-footer"><div class="frame"><span>Rua Stays</span><span id="version"></span></div></footer>
+</body>
+</html>

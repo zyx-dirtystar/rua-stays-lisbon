@@ -1,0 +1,9 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {"idx":0,"version":"6","when":1795526100000,"tag":"0000_hotel_search","breakpoints":true},
+    {"idx":1,"version":"6","when":1795527000000,"tag":"0001_continuation","breakpoints":true},
+    {"idx":2,"version":"6","when":1795531500000,"tag":"0002_factorial","breakpoints":true}
+  ]
+}

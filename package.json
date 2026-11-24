@@ -1,0 +1,10 @@
+{
+  "name": "rua-stays-lisbon",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node scripts/local.mjs",
+    "test": "node --test --test-isolation=none tests/study.test.mjs tests/factorial.test.mjs"
+  }
+}
