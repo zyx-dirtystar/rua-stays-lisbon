@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
+    "deploy": "node scripts/cloudflare-config.mjs && npx --yes wrangler@4 d1 migrations apply DB --remote --config .wrangler.deploy.json && npx --yes wrangler@4 deploy --config .wrangler.deploy.json",
     "start": "node scripts/local.mjs",
     "test": "node --test --test-isolation=none tests/study.test.mjs tests/factorial.test.mjs"
   }
